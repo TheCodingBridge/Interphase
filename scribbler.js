@@ -12,7 +12,7 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `get started with </java>
+  var txt = `get started with Java
             
     class interphase {
     |public static void main(String[] args) {
