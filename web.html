@@ -27,13 +27,14 @@
           <li class="js-btn">Editors</li>
           <li class="js-btn">What are languages?</li>
           <li class="js-btn">Your first code</li>
+          <li class="js-btn">What next?</li>
         </ul>
       </aside>
       <article class="doc__content">
         <section class="js-section">
           <h3 class="section__title">Get Started</h3>
           <p>Welcome to Interphase's dedicated tutorial on getting you started with making websites. Don't worry if you've never programmed before or even know what programming means. If you don't, then you're in the right place. </p>
-          <h3 class="section__title">What is coding?</h3>
+          <h4 class="section__title">What is coding?</h4>
           <p>If you want to create a good website, you will probably need to learn how to code. Coding, which is a subset of programming, refers to writing a series of instructions into a file, that when run, instruct the computer you're on to do something. You will soon realise that the ability to write coherent code is immensely powerful. </p>
           <p>Now that you know what coding means, it is time to see some code. Lo and behold the 'code' below.</p>
           <div class="code__block code__block--notabs">
@@ -43,7 +44,7 @@
               </code>
             </pre>
           </div>
-          <p>Don't concern yourself with the weird signs the sentence for now. Just know that this is an example of code. When this is written into a special file that ends in .html and displayed in major browsers such as Google Chrome, Mozilla Firefox or Microsoft Edge, it will output that sentence in all its glory. </p>
+          <p>Don't concern yourself with the weird signs around the sentence for now. Just know that this is an example of code. When this is written into a special file that ends in .html and displayed in major browsers such as Google Chrome, Mozilla Firefox or Microsoft Edge, it will output that sentence in all its glory. </p>
         </section>
 
         <section class="js-section">
@@ -78,13 +79,52 @@
         <section class="js-section">
           <h3 class="section__title">What even are programming and markup languages?</h3>
           <p>All of the above is good and well, but you've probably heard of the term 'programming languages' before and wondered what exactly this means. </p>
-          <p>These are in fact quite intuitively named - these are languages in the sense that they are used for us to communicate with computers. You may be surprised to hear that computers don't actually understand the code that you write. This needs to be <i>translated</i> first into another language that they do understand (do you see why they are called languages now?).  </p>
+          <p>These are in fact quite intuitively named - these are languages in the sense that they are used for us to communicate with computers. You may be surprised to hear that computers don't actually understand the code that you write. This needs to be <i>translated</i> first into another language that they do understand (do you see why they are called languages now?). </p>
+          <p>Programming languages are often confused with markup languages. They might appear similar at first glance but there is definitely a distinction. When we are talking about languages like HTML, which stands for 'Hyper Text Markup Language', we are referring to a language that is used to define a set of rules for encoding documents in a way that is understood by both humans and machines (i.e. computers). </p>
           <hr />
         </section>
         <section class="js-section">
-          <h3 class="section__title">Your first code</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+          <h3 class="section__title">Your time has come</h3>
+          <p>You know what code means, you've seen what code looks like and you've even been introduced to the notion of languages. It is time for you to have a go at implementing this understanding for yourself.</p>
+          <p>Take another look at the text editors above and see what picks your fancy. If you're completely lost for choice, then as you're just getting started, we recommend trying out Sublime Text, which is the lightest editor out of the three (when we say 'lighter' we are referring to the size and complexity of the program - nothing else...).</p>
+          <p>To get started with using Sublime Text (or any text editor of your choice for that matter), the best practice is to get familiar with the respective editor's website and documentation. You will find that Google will be your best friend for this sort of stuff. We will help you out this one time and offer you the shortcut of just clicking <a href="https://www.sublimetext.com/" class="link link--light">here</a>, which will take you to the official place where you can download the editor for yourself. </p>
+          <p>We would also like to emphasise the following point, so we will put it in bold: <b>Try your best to get into the habit of reading documentation.</b> This is perhaps one of the most invaluable pieces of advices we can offer to you as an aspiring programmer, and is something that we would hope you will keep with you far beyond reading this page.</p>
+          <p>You should be able to find the download link for your text editor now - in which case, make sure to install it following the respective set-up wizard, and then go ahead and open it.  </p>
+          <img class="center" src="vscode.png" height="343" width="639" alt="A gif where Yoda explains that you're not finished learning" />
+          <p>Once you've created a new file in your editor of choice, you will see something like the above. If you do, then you're well on your way to producing your first piece of code.  </p>
+          <p>We introduce you to one of the most popular programming languages used on the web, HTML (briefly alluded to before). This language is a markup language and is primary used for writing text that is used to be displayed on a a web page. When you're writing text, you will most likely want to differentiate between what is a paragraph, a heading and so on. HTML allows you to do this using tags. </p>
+          <p>We enclose different pieces of content with an opening tag and a closing tag. For instance, in HTML, a paragraph is declared with the <code>&lt;p></code> tag. This tag has a respective closing tag, <code>&lt;p></code>. Anything encompassed within these tags is interpreted as a paragraph by the browser. Most elements on a web page are represented in this fashion, and you'll pick up on it quickly. </p>
+          <p>However, before we dive into writing a lovely web page with paragraphs, there are some good practices that we should learn. When creating a HTML page, we often start by declaring the following:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;!DOCTYPE html>
+                &lt;html>
+
+                <&sol;html>
+              </code>
+            </pre>
+          </div>
+          <p>This is not as scary as it might seem. The first declaration, <code>&lt;DOCTYPE html></code>, simply tells your browser what to expect. In this case, it is telling the browser that it is about to see a HTML page. Note that this actually isn't a tag - it is simply informative to the web page. You might also have realised that it does not have a closing element too - this is not too weird since it isn't a tag as we've explained, but you'll also soon come across some tags that don't have a closing tag (yeah, a little confusing, but we thought we'd tell you now).  </p>
+          <p>What follows, however, is indeed a tag. You might have recognised so due to its opening and closing tags. This is the 'root' element of the document, another important prerequisite which you should preface all your documents with, which is used to encapsulate all further HTML tags. </p>
+          <p>As such, yes, our <code>&lt;p></code> is right at home between these tags. In fact, you can copy the above code and add a paragraph in between that contains any text you like. You should end up with something like below. </p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;!DOCTYPE html>
+                &lt;html>
+                &lt;p>I am a paragraph.<&sol;p>
+                <&sol;html>
+              </code>
+            </pre>
+          </div>
+          <p>You have now officially created your first meaningful piece of code, and it is ready to be displayed into your web browser. We know you're eager, but you need to save this file before you do anything. You can call it whatever you want, but you need to make sure that your file ends in '.html'. For example, a suitable file name is 'index.html'. Once it has been saved, find wherever you saved it, and proceed to open it in your browser of choice. You should see your first piece of code come to life.</p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Am I done?</h3>
+          <p>Not quite.</p>
+          <img class="center" src="yoda.gif" alt="A gif where Yoda explains that you're not finished learning" />
+          <p>You've merely scratched the surface, but that's okay. You are starting your journey into the programming world and you need to take baby steps before you go any further. This page is designed to help you walk those steps as smoothly as possible. Once everything on this page has sunk in, you are ready to transcend into the world of detailed tutorial and documentation. We leave you with our personal favourite that beautifully continues where we leave you, <a href="https://www.w3schools.com/html/" class="link link--light">W3Schools</a>.</p>
         </section>
       </article>
     </div>
