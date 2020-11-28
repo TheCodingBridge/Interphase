@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo"><span class="logo__thin">Tutorials</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Get Started</li>
+          <li class="js-btn">What is coding?</li>
+          <li class="js-btn">Writing your code</li>
+          <li class="js-btn">Programming and languages</li>
+          <li class="js-btn">Your first code</li>
+          <li class="js-btn">First Game</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Get Started</h3>
+          <p>Welcome to Interphase's dedicated tutorial on getting you started with making games. Don't worry if you've never programmed before or even know what programming means. If you don't, then you're in the right place. </p>
+        </section>
+          <section class="js-section"></section>
+          <h3 class="section__title">What is coding?</h3>
+          <p>If you want to start how to make a game, you will probably need to learn how to code. Coding, which is a subset of programming, refers to writing a series of instructions into a file, that when run, instruct the computer you're on to do something. You will soon realise that the ability to write coherent code is immensely powerful. </p>
+          <p>Now that you know what coding means, it is time to see some code. Lo and behold the 'code' below.</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                print ("Hello, I am code.") 
+              </code>
+            </pre>
+          </div>
+          <p>Don't concern yourself with the weird signs the sentence for now. Just know that this is an example of code. When this is written into a special file that ends in .py .</p>
+        </section>
+
+        <section class="js-section">
+          <h3 class="section__title">Choosing a way to write your code</h3>
+          <p>We believe that one of the first things you should think about is what text editor you use. This is what you will use to write your 'code'. This matters because a good text editor will improve your work flow, and ultimately make you a better programmer. We recommend a couple of the largest text editors out there below, with a brief description of what they're good for and not so good for.  </p>
+          <table id="customers">
+            <tr>
+              <th>Editors</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+            <tr>
+              <td><a href="https://code.visualstudio.com/" class="link link--dark">VS Code</a></td>
+              <td>Highly customisable & provides source control tools</td>
+              <td>A little complicated for beginners</td>
+            </tr>
+            <tr>
+              <td><a href="https://atom.io/" class="link link--dark">Atom</a></td>
+              <td>Offers the best integration with Github & a modern design</td>
+              <td>Large install size & runs slowers with many plugins</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.sublimetext.com/" class="link link--dark">Sublime Text</a></td>
+              <td>Sleek and simple, has a distraction free writing mode & optimised for speed of execution</td>
+              <td>Lacks the same variety of plugins as VS Code and Atom </td>
+            </tr>
+          </table>
+          <p>You will find that any three of these text editors will offer you an enjoyable coding experience. Our personal recommendation would be to perhaps start with a lighter editor such as Sublime Text, and once you feel more comfortable, perhaps move on to using an editor like VS Code (our personal favourite, and what we used to write this website). </p>
+          <hr />
+        </section>
+
+        <section class="js-section">
+          <h3 class="section__title">What even are programming and markup languages?</h3>
+          <p>All of the above is good and well, but you've probably heard of the term 'programming languages' before and wondered what exactly this means. </p>
+          <p>These are in fact quite intuitively named - these are languages in the sense that they are used for us to communicate with computers. You may be surprised to hear that computers don't actually understand the code that you write. This needs to be <i>translated</i> first into another language that they do understand (do you see why they are called languages now?).  </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Your first code</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                print ("Welcome to your first code.")
+                name= input("What is your name? ")
+                print ("Hi "+ name + " . Welcome! ")
+                age= input("And how old are you? ")
+                newage=int(age)+5
+                print ("You will be " + str(newage)+ " in 5 years!")
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Starting your first game</h3>
+          <p>All of the above is good and well, but you've probably heard of the term 'programming languages' before and wondered what exactly this means. </p>
+          <p>These are in fact quite intuitively named - these are languages in the sense that they are used for us to communicate with computers. You may be surprised to hear that computers don't actually understand the code that you write. This needs to be <i>translated</i> first into another language that they do understand (do you see why they are called languages now?).  </p>
+          <hr />
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">Made with ♡ by TheCodingBridge team. Design from <a href="https://tympanus.net/codrops/" target="_blank" class="link link--light">Codrops</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
