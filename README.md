@@ -1,6 +1,6 @@
 # Interphase
 
-*This project was created in less than 24 hours during [GreatUniHack 2020](https://greatunihack.com/).*
+*This project was created in less than 12 hours during [GreatUniHack 2020](https://greatunihack.com/).*
 
 There is a gap in the market when it comes to tutorials that address absolute beginners - while there are many high quality programming tutorials out there, many fail to cater to newbies with minimal to no technological background. We noticed this and decided it was high time to bridge the gap. As a result, TheCodingBridge team was formed to develop the Interphase project.
 
