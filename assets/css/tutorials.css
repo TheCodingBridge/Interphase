@@ -114,6 +114,26 @@ html, body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .small-center-pic {
+    width: 159px;
+    height: 89px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .even-smaller-center-pic {
+    width: 239px;
+    height: 128px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;
