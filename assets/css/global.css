@@ -1,4 +1,69 @@
 /* css variables*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  width: 60px;
+  height: 34px;
+  background-color: var(--bg-color);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 :root {
   --primary-color: white;
   --primary-color-light: White;
@@ -9,8 +74,8 @@
   --light-gray-color:#444D56;
   --medium-gray-color: #959DA5;
   --dark-gray-color: #C6CBD1; 
-  --bg-color: black;
-  --code-bg-color: rgb(36, 36, 36);
+  --bg-color: rgb(54, 54, 54);
+  --code-bg-color: rgb(34, 34, 34);
 }
 
 /* normalized */
@@ -18,7 +83,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  background-color: black;
+  background-color: rgb(29, 29, 29);
 }
 
 p {
@@ -110,8 +175,8 @@ hr {
 /* buttons */
 .button--primary {
   padding: 10px 22px;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: var(--accent-color-light);
+  color: black;
   position: relative;
   text-decoration: none;
   border: 0;
@@ -131,7 +196,7 @@ hr {
 
 .button--primary:hover {
   text-shadow: 0px 1px 1px var(--accent-color-dark);
-  color: white;
+  color: black;
   transform: translate3D(0, -3px, 0);
 }
 
@@ -150,6 +215,14 @@ hr {
   color: var(--accent-color);
 }
 
+.js-btn {
+  color: white
+}
+.js-btn:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* links */
 .link {
   text-decoration: none;
@@ -165,7 +238,7 @@ hr {
 }
 
 .link--light {
-  color: var(--accent-color);
+  color: var(--primary-color-light);
 }
 
 /* menu */
@@ -247,12 +320,13 @@ table td, table th {
   border: 1px solid var(--code-bg-color);
   padding: 0.8rem;
   font-weight: 300;
+  color: white
 }
 
 table th {
   text-align: left;
-  background-color: white;
-  border-color: white;
+  background-color: --code-bg-color;
+  border-color: --code-bg-color;
   border-bottom-color: var(--code-bg-color);
 }
 
@@ -299,7 +373,7 @@ table td:first-child {
   text-align: center;
   background-color: black;
   padding: 2rem;
-  color: peachpuff;
+  color: var(--primary-color);
 }
 
 @keyframes fadeUp {
